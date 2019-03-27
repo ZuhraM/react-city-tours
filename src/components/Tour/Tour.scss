@@ -1,0 +1,85 @@
+@import "../../index";
+
+.tour{
+  background: $mainGrey;
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  img{
+    width: 100%;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    display: block;
+  }
+}
+.img-container{
+  position: relative;
+}
+
+.new{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: $mainGreen;
+  color: $mainWhite;
+  padding: 10px 12px;
+  border-bottom-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+}
+
+.close-btn{
+  position: absolute;
+  display: block;
+  top: 5%;
+  right: 5%;
+  color: $mainGreen;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+.img-container:hover .close-btn{
+  opacity: 1;
+}
+.tour-info{
+  padding: 1rem 0.5rem;
+  h3{
+    text-transform: uppercase;
+    color: $mainGreen;
+  }
+  h4{
+    text-transform: capitalize;
+    color: $mainBlack;
+    margin: 0.2rem 0 0.6rem 0;
+  }
+  h5{
+    text-transform: capitalize;
+    text-decoration: none;
+    span{
+      color: $mainGreen;
+      margin: 0.5rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+  .priceTag h6{
+    position: relative;
+    text-align: right;
+    font-size: 1.2rem;
+    color: $mainGreen;
+  }
+  .priceTag p{
+    position: relative;
+    text-align: right;
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    color: grey;
+  }
+  .leftstr, .rightstr{
+    float: left;
+    width: 50%;
+  }
+  .rightstr{
+    text-align: right;
+  }
+}
